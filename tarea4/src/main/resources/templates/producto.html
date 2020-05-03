@@ -14,16 +14,28 @@
          	
 	        	<label>C&oacute;digo de Producto Universal:</label>
 	           	<input th:field="*{codigo}" id="codigo" type="text" placeholder="Ingrese el c&oacute;digo del producto"/> 
+	            <span th:errors="*{codigo}" style="color:#FF0000"></span>
+	            
 	            <label>Nombre Producto:</label>
 	           	<input th:field="*{nombre}" id="nombre" type="text" placeholder="Ingrese el nombre del producto"/> 
+	            <span th:errors="*{nombre}" style="color:#FF0000"></span>
+	            
 	            <label>Marca:</label>
 	            <input th:field="*{marca}" id="marca" type="text" placeholder="Ingrese la marca del producto"/> 
+	            <span th:errors="*{marca}" style="color:#FF0000"></span>
+	            
 	            <label>Descripci&oacute;n:</label>
 	            <input th:field="*{descripcion}" id="descripcion" type="text" placeholder="Ingrese la descripci&oacute;n del producto"/> 
+	            <span th:errors="*{descripcion}" style="color:#FF0000"></span>
+	            
 	            <label>Existencias:</label>
 	           	<input th:field="*{existencias}" id="existencias" type="text" placeholder="Ingrese el numero de existencias del producto"/> 
+	            <span th:errors="*{existencias}" style="color:#FF0000"></span>
+	            
 	            <label>Fecha de Ingreso:</label>
 	            <input th:field="*{fIngreso}" id="fIngreso" type="text" placeholder="Ingrese la fecha de ingreso del producto"/>    
+	            <span th:errors="*{fIngreso}" style="color:#FF0000"></span>
+	            
 	            <input class="boton" type="submit"  value="Guardar Producto"/>
 	        
 	         </form>

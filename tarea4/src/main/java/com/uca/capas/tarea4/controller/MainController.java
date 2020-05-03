@@ -25,7 +25,7 @@ public class MainController {
 	public ModelAndView procesar(@Valid @ModelAttribute Producto producto, BindingResult result) {
 		ModelAndView mav = new ModelAndView();
 		String nombreProducto = producto.getNombre();
-		String guardado = "Producto " + "<strong>" + nombreProducto + "</strong" + " guardado con éxito"; 	//mensaje de producto guardado
+		String guardado = "Producto " + "<strong>" + nombreProducto + "</strong>" + " guardado con éxito"; 	//mensaje de producto guardado
 		
 		if(result.hasErrors()) { //si hay errores regresamos a la página producto donde se mostraran los errores encontrados
 			mav.setViewName("producto");

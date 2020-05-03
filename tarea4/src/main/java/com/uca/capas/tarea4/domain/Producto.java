@@ -6,10 +6,10 @@ import javax.validation.constraints.Size;
 
 public class Producto {
 	//Usando anotaciondes de hibernate para validaciones
-	@Pattern(regexp="\\d{12}", message = "El campo Código de Producto Universal debe tener exactamente 12 dígitos.")
+	@Pattern(regexp="\\d{12}", message = "El campo Código de Producto Universal debe tener 12 dígitos.")
 	private String codigo;
 	
-	@Size(min = 1, max = 10, message = "El campo Nombre Producto debe tener una longitud entre 1 y 100 caracteres.")
+	@Size(min = 1, max = 10, message = "El campo Nombre Producto debe tener entre 1 y 100 caracteres.")
 	private String nombre;
 	
 	@Size(min = 1, max = 10, message = "El campo Marca debe tener una longitud entre 1 y 100 caracteres.")

@@ -7,9 +7,9 @@
 </head>
 <body>
 	<div class="contenedor-resultado"> 
-		<h2 class="titulo-resultado"><span th:text="${ingresado}"></span></h2>
-		<a th:href="@{/ingresar}" >
-			<input class="boton-nuevo" type="submit"  value="Ingresar Nuevo Alumno" >
+		<p class="titulo-resultado"><span th:utext="${guardado}"></span></p>
+		<a th:href="@{/producto}" >
+			<input class="boton-nuevo" type="submit"  value="Ingresar Nuevo Producto" >
 		</a>
 	</div>          	
 </body>

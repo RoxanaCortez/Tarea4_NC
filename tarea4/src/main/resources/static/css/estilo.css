@@ -51,6 +51,9 @@
 	padding: 25px 0 25px 0
 }
 
+p{
+	font: 18px/30px Helvetica, Verdana, sans-serif; 	
+}
 label{
 	display: block
 }
