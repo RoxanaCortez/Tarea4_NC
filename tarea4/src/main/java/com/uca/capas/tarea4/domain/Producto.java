@@ -9,13 +9,13 @@ public class Producto {
 	@Pattern(regexp="\\d{12}", message = "El campo Código de Producto Universal debe tener 12 dígitos.")
 	private String codigo;
 	
-	@Size(min = 1, max = 10, message = "El campo Nombre Producto debe tener entre 1 y 100 caracteres.")
+	@Size(min = 1, max = 100, message = "El campo Nombre Producto debe tener entre 1 y 100 caracteres.")
 	private String nombre;
 	
-	@Size(min = 1, max = 10, message = "El campo Marca debe tener una longitud entre 1 y 100 caracteres.")
+	@Size(min = 1, max = 100, message = "El campo Marca debe tener una longitud entre 1 y 100 caracteres.")
 	private String marca;
 	
-	@Size(min = 1, max = 5, message = "El campo Descripción debe tener una longitud entre 1 y 500 caracteres.")
+	@Size(min = 1, max = 500, message = "El campo Descripción debe tener una longitud entre 1 y 500 caracteres.")
 	private String descripcion;
 	
 	@Digits(integer = 5, fraction = 0, message = "El campo Existencias no puede tener números con decimales")
